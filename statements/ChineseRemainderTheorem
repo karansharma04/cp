@@ -1,0 +1,9 @@
+Given a number p = p1.p2.p3....pk where pi are pairwise coprime and a set of congruence equations
+a = a1 (mod p1)
+a = a2 (mod p2)
+.
+.
+.
+a = ak (mod pk)
+
+Then the above set of equations has a unique solution a (mod p)

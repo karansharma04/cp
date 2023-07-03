@@ -1,0 +1,13 @@
+vector<bool> prime(1e7, true);
+
+void sieve(ll n) {
+  prime[1] = false;
+  for (int p = 2; p * p <= n; p++) {
+    if (prime[p]) {
+      if (p == 2)
+        for (int i = p * p; i <= n; i += p) prime[i] = false;
+      else
+        for (int i = p * p; i <= n; i += 2 * p) prime[i] = false;
+    }
+  }
+}

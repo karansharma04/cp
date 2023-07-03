@@ -1,0 +1,15 @@
+malloc() :-
+takes in  the size in bytes that the memory block should have, and returns void* if allocation successful and NULL otherwise
+int *arr_ptr = (int *) malloc(N*sizeof(int));
+ - does not initialize the bits in memory to 0 (actually does in my compiler)
+calloc() :- 
+takes number of blocks and size in bytes of each block
+int *arr_ptr = (int *) calloc(N, sizeof(int));
+realloc() :-
+reallocating dynamically allocated memory
+arr_ptr = (int *) realloc(arr_ptr, N*sizeof(int)); 
+
+free() :-
+used for deallocated dynamically allocated memory which was allocated using malloc, calloc or realloc
+only deallocates memory, does not call any destructor like delete (which is an operator) does.
+free(arr_ptr);

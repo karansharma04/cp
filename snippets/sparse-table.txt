@@ -1,0 +1,21 @@
+SPARSE TABLE PRECOMPUTATION
+
+int mxN=2e5+1, mxK=25;
+vvi sparse(mxN, vi (mxK));
+for(int i=0;i<n;i++) sparse[i][0]=a[i];
+for(int j=1;j<=mxK;j++) {
+    for(int i=0;i+(1<<j)<=n;i++) {
+        sparse[i][j]=min(sparse[i][j-1], sparse[i+(1<<j-1)][j-1]);
+    }
+}
+
+//precomputing logarithms
+int lg[n + 1];
+lg[1] = 0;
+rep(i, 2, n + 1) { lg[i] = lg[i / 2] + 1; }
+
+while(q--) {
+    int a, b; cin>>a>>b; a--, b--;
+    int j=lg[b-a+1];
+    cout<<min(sparse[a][j], sparse[b-(1<<j)+1][j])<<endl;
+}

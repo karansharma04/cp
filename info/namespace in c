@@ -1,0 +1,11 @@
+namespace is a space/context wherein variables, functions, classes, etc. can be defined.
+
+namespace represents scope
+
+namespace can contain libary
+
+different libraries can have functions with same name using namespaces
+
+std::cout
+
+std is the namespace which has all the STL functions declarations

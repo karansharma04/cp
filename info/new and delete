@@ -1,0 +1,14 @@
+new operator :-
+used for allocating memory dynamically, calls the constructor of the data-type
+int *a = new int;
+int *a = new int(3);
+
+customDataType *a = new customDataType;
+customDataType *a = new customDataType(2, 3); 
+
+int *arr = new int[N];
+
+delete operator :-
+used for deallocating memory allocated by new, calls the destructor of the data-type
+delete a;
+delete[] arr;

@@ -1,0 +1,36 @@
+// precomputation need prime factorization of all numbers 1 to N algo
+//     : find smallest factor of every number,
+//       then run loop and keep dividing the number by its smallest factor
+
+// O(NlogN) approach
+vi smallestFactor(N + 1, 1);
+for (int i = N; i >= 2; i--) {
+  for (int j = i; j <= N; j += i) smallestFactor[j] = i;
+}
+
+vvi factorization(N + 1);
+for(int i=2;i<=N;i++) {
+  int j=i;
+  while(j>1) {
+    factorization.push_back(smallestFactor[j]);
+    j/=smallestFactor[j];
+  }
+}
+
+
+
+// O(N) approach
+// Linear Sieve
+vector<int> primes;
+vector<int> smallestFactor(N+1, 0);
+
+for(int i=2;i<=N;i++) {
+  if(smallestFactor[i]==0) {
+    smallestFactor[i]=i;
+    primes.push_back(i);
+  }
+  for(auto x: primes) {
+    if(x*i>N) break;
+    smallestFactor[x*i]=x;
+  }
+}

@@ -1,0 +1,1 @@
+gray_code(n) = binary_code(n) ^ (binary_code(n)>>1)

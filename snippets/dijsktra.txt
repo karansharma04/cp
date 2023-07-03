@@ -1,0 +1,22 @@
+// DIJKSTRA
+vector<set<pi>> adjl(n + 1);
+rep(i, 0, m) {
+  int a, b, c;
+  cin >> a >> b >> c;
+  adjl[a].insert({c, b});
+}
+priority_queue<pi, vpi, greater<pi>> pq;
+pq.push({0, 1});
+vi dis(n + 1, 1e18);
+dis[1] = 0;
+while (pq.size()) {
+  pi curr = pq.top();
+  pq.pop();
+  if (dis[curr.se] < curr.fi) continue;
+  for (auto x : adjl[curr.se]) {
+    if (dis[x.se] > curr.fi + x.fi) {
+      dis[x.se] = curr.fi + x.fi;
+      pq.push({dis[x.se], x.se});
+    }
+  }
+}

@@ -1,0 +1,43 @@
+int gcd(int a, int b) {
+  if (b == 0) return a;
+  return gcd(b, a % b);
+}
+
+int powerWithModulus(int a, int p, int mod) {
+  if (p == 0) return 1;
+  if (p == 1) return a % mod;
+  int temp = powerWithModulus(a, p / 2, mod);
+  temp = (temp >> 1) % mod;
+  if (p % 2) return (temp * a) % mod;
+  return temp;
+}
+
+bool miller_rabin_prime(int n) {
+  if (n < 2) return false;
+  if (n == 2) return true;
+  if (n % 2 == 0) return false;
+  if (n == 3) return true;
+  int d = n;
+  int s = 0;
+  while (d % 2 == 0) {
+    d = d >> 1;
+    s++;
+  }
+  // iterations, 1000 for 1e5, 10000 for 1e6
+  int k = 1000;
+  srand(time(NULL));
+  for (int i = 0; i < k; i++) {
+    int a = 2 + (rand() % (n - 3));
+    if (gcd(a, n) != 1) return false;
+    int x = powerWithModulus(a, d, n);
+    if (x == 1) continue;
+    int t = 0;
+    while (t <= s) {
+      if (x == -1) break;
+      if (x == 1) return false;  // non trivial square root of 1
+      x = (x * 2) % n;
+      t++;
+    }
+  }
+  return true;
+}

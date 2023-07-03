@@ -1,0 +1,42 @@
+int extendedEuclideanGCD(int a, int b, int &x, int &y) {
+  if(b==0) {
+    x = 1;
+    y = 0;
+    return a;
+  }
+  int x1, y1;
+  int g = extendedEuclideanGCD(b, a%b, x1, y1);
+  x = y1;
+  y = x1 - (a/b)*y1;
+  return g;
+}
+
+
+void findAnySolution(int a, int b, int c, int &x, int &y, int &g) {
+  int x0, y0;
+  g = extendedEuclideanGCD(a, b, x0, y0);
+  if(c%g) {
+    cout<<"No solution exists\n";
+    return;
+  }
+  x = x0 * c/g;
+  y = y0 * c/g;
+  return;
+}
+
+int main() {
+#ifndef ONLINE_JUDGE
+  debugging = true;
+#endif
+  int x=0, y=0, g;
+  int a=6, b=4, c=2;
+  findAnySolution(a,b,c,x,y,g);
+  if(!(x==0 && y==0)) cout<<a<<"*"<<x<<"+"<<b<<"*"<<y<<"="<<c<<endl;
+  else return 0;
+  for(int k=1;k<10;k++) {
+    int x1 = x+(k*b)/g;
+    int y1 = y-(k*a)/g;
+    cout<<"x="<<x1<<", y="<<y1<<endl;
+  }
+  return 0;
+}
