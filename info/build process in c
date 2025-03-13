@@ -1,0 +1,6 @@
+Steps in building a C++ project:
+1. Preprocessing: based on Preprocessing directives like include, define, ifdef, etc
+2. Compilation: converts cpp files -> object code files, not independently executable as unlinked
+3. Linking: Takes all the object code files, and fetches the necessary library code based on the functions called in the code files, and combines them into a single standalone executable which can then be ran on the computer.
+Static libraries: libraries whose code gets added during compile time
+Dynamic libraries: whose code gets fetched and executed during run time

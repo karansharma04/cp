@@ -1,0 +1,133 @@
+pointers: variables which hold memory address of another variable
+references: alias of another variable, not a variable by itself just an alias, when used in function args compiler internally handles it via pointers
+
+classes and structs: no difference except for default visibility/access
+
+
+static keyword:
+	1. in a class:
+		static variables/methods belong to the class and not to the objects. If some variable has to be common across all objects of a class, we make it static. All objects will share a static variable. Static methods also belong to the class and not object, they can only access static data members
+	2. outside a class
+		making a variable/function static means that only internal linking would happen. In other words, while linking, the static variable/function will only be visible to the current translation unit/cpp file and not to other files
+
+constructors: method which gets called when object gets created
+destructors: method which gets called when object gets destroyed. For stack memory when it goes out of scope, and for dynamic memory when the object is deleted using delete. Can also be called manually for no reason.
+
+virtual functions: 
+enable function overriding. when you mark a function as virtual, it will get overriden when called from base class's pointer if a child class provides an implementation. 
+RTTI is only available for polymorphic types, that is classes which have atleast one virtual function. This is because the type info or the RTTI is stored alongside or within the vtable itself.
+dynamic_cast -> used for safe downcasting from a base class pointer to child class pointer
+Therefore, dynamic_cast can only work with polymorphic types. If no virtual function is present in the inheritance heirarchy, RTTI is not there, hence dynamic_cast won't function. But as we said earlier, whenever there is inheritance, we want to declare the destructor as virtual so vtable is always there with inheritance.
+
+pure virtual functions:
+virtual void printName(string& name) = 0;
+enables us to define interfaces that the child classes must implement in order to be instantiable
+
+char *str = "Karan"
+str[1]='e'
+WRONG, string literals are immutable, defined in read only segments of memory for whatever reason 
+char str[] = "Karan"
+str[1]='e'
+RIGHT, weird but yeah internal c++ library handling
+
+
+const methods: methods which don't change the state of the object ,i.e., modify any data members of the object (can change other data like global variables)
+void printName() const {
+
+}
+mutable: allow changing the variable within a const method
+
+
+return value optimization??
+
+
+allocate memory on the heap only if you need the lifetime of the object to extend out of its scope or when too much memory needs to be allocated
+stack memory -> automatically managed, small
+
+placement new operator:
+new, delete -> operators, (de)allocate memory on the heap, and call the constructor/destructor
+malloc, calloc -> functions which (de)allocate memory on the heap
+placement new: constructs an object in the memory location provided, does not allocate new memory on the heap, only calls the constructor, thats why delete is not used with placement new, because delete will try to deallocate memory on the heap that new allocated but memory hasn't been allocated in the first place.
+Never use delete with placement new, always call destructor manually.
+Usually
+new -> allocates memory, calls constructor
+delete -> calls destructor, deallocates memory
+int *a_ptr = new(&a) int;
+
+implicit, explicit keyword: implicit conversion/construction via contructors, explicit keyword disables implicit conversion for a constructor
+
+copy constructor is especially useful when you have pointer members which point to dynamically allocated memory, if accidentally we use default copy constructor it will create a shallow copy for the object and can lead to crashes as the two objects are essestially pointing to the same memory location in heap
+
+overloading -> for scoped pointer so that we can do stuff like s_ptr->PrintName() from the scoped pointer
+apparenly the operator -> applies itself recursively until it finds the pointer
+
+memory management in c++
+code/text segment
+static/global memory segment (data segment)
+stack
+heap
+
+
+casting in c++
+you can just use raw (c-style) casts everywhere but safer and more explicit to use c++-style casts
+const int* ptr1 = &val;
+int* ptr2 = (int*)ptr1; -> int* ptr2 = const_cast<int*>(ptr1);
+int val = (int)2.0f; -> int val = static_cast<int>(2.0f)
+Entity e;
+int *arr = (int*)(&e); -> int *arr = reinterpret_cast<int*>(&e);
+
+dynamic_cast is used for safe downcasting of a base class pointer to a child class pointer, base class needs to be have a virtual function (vtable)
+
+Virtual Destructor: just make the destructor virtual wheneverrr there is inheritance, reason being otherwise all the destructors in the heirarchy won't be called, only the base class' destructor will be called 
+
+const references are common in function parameters because they accept both lvalues and also rvalues
+
+int& a -> lvalue reference
+int&& a -> rvalue references
+
+
+threads in c++?
+Move semantics?
+
+OOP 
+OS concepts
+
+stl's lower_bound ->first element equal to or greater than val, upper_bound -> first element greater than val
+
+shortest distance from one point to all other points when edges are >=0 -> dijkstra
+shortest distance from one point to all other points when edges can be <0 -> bellman
+-> iterate over all edges (n-1) times and relax the distances to the nodes
+-> to check if negative cycle exists, iterate once more, if any distance changes further, negative cycle is present
+
+shortest distance between all pairs of points -> floyd-warshall
+iterate over all nodes considering them the intermediate node, then for all pairs of i and j try relaxing
+k, i, j -> O(n3)
+
+
+malloc: used for allocating memory on the heap, returns NULL if memory allocation fails, doesn't initialize the memory
+int *ptr = (int*) malloc(sizeof(int));
+int *arr = (int*) malloc(N*sizeof(int));
+
+free(ptr);
+ptr = nullptr;
+free(arr);
+arr = nullptr;
+
+calloc: used for allocating memory for array of items on the heap, initializes all the allocated bits to 0, returns NULL on allocation failure
+int *arr = (int*) calloc(10, sizeof(int))
+
+realloc: reallocate memory, returns null if reallocation fails, do free the original memory in that case
+int* new_ptr = (int*) realloc(ptr, 10*sizeof(int));
+if(new_ptr==nullptr) {
+  free(ptr);
+  // handle failure
+}
+
+
+MST
+Segment Tree
+heap
+
+Small string optimization:
+Compilers usually don't allocate memory on the heap for small const strings
+if the string is 15 characters or less, reserved storage on the stack itself is used. 

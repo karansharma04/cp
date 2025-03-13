@@ -1,0 +1,213 @@
+{'top_k_accuracy': [0.4106209150326797, 0.5243464052287582, 0.5751633986928104, 0.5986928104575163, 0.6078431372549019], 'n_items': 6120, 'no_recommendation_percentage': 0.0}
+At Capability level
+{'top_k_accuracy': [0.571621014818141, 0.5518634934889987, 0.5864391558149977, 0.6064211944319713, 0.6149528513695555], 'n_items': 4454, 'no_recommendation_percentage': 0.016165244723843737}
+At Product level
+{'top_k_accuracy': [0.5763684038020321, 0.6832186168469354, 0.7286135693215339, 0.7531956735496559, 0.7630285152409046], 'n_items': 6102, 'no_recommendation_percentage': 0.0}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.2
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 25576.77it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:23<00:00,  2.31s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.3
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 49913.77it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:24<00:00,  2.33s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.4
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 50148.03it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:24<00:00,  2.32s/it]
+{'top_k_accuracy': [0.7792483660130719, 0.7803921568627451, 0.7803921568627451, 0.7803921568627451, 0.7803921568627451], 'n_items': 6120, 'no_recommendation_percentage': 0.4673202614379085}
+At Capability level
+{'top_k_accuracy': [0.8423888639425235, 0.8423888639425235, 0.8423888639425235, 0.8423888639425235, 0.8423888639425235], 'n_items': 4454, 'no_recommendation_percentage': 0.5475976650202066}
+At Product level
+{'top_k_accuracy': [0.8649623074401835, 0.8649623074401835, 0.8649623074401835, 0.8649623074401835, 0.8649623074401835], 'n_items': 6102, 'no_recommendation_percentage': 0.4668960996394625}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.5
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 49860.97it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:23<00:00,  2.31s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.3
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 49913.77it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:24<00:00,  2.33s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.4
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 50148.03it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:24<00:00,  2.32s/it]
+{'top_k_accuracy': [0.7792483660130719, 0.7803921568627451, 0.7803921568627451, 0.7803921568627451, 0.7803921568627451], 'n_items': 6120, 'no_recommendation_percentage': 0.4673202614379085}
+At Capability level
+{'top_k_accuracy': [0.8423888639425235, 0.8423888639425235, 0.8423888639425235, 0.8423888639425235, 0.8423888639425235], 'n_items': 4454, 'no_recommendation_percentage': 0.5475976650202066}
+At Product level
+{'top_k_accuracy': [0.8649623074401835, 0.8649623074401835, 0.8649623074401835, 0.8649623074401835, 0.8649623074401835], 'n_items': 6102, 'no_recommendation_percentage': 0.4668960996394625}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.5
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 49860.97it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:22<00:00,  2.30s/it]
+{'top_k_accuracy': [0.7813725490196078, 0.7821895424836601, 0.7821895424836601, 0.7821895424836601, 0.7821895424836601], 'n_items': 6120, 'no_recommendation_percentage': 0.46977124183006536}
+At Capability level
+{'top_k_accuracy': [0.8428378985181859, 0.8428378985181859, 0.8428378985181859, 0.8428378985181859, 0.8428378985181859], 'n_items': 4454, 'no_recommendation_percentage': 0.5484957341715312}
+At Product level
+{'top_k_accuracy': [0.8662733529990168, 0.8662733529990168, 0.8662733529990168, 0.8662733529990168, 0.8662733529990168], 'n_items': 6102, 'no_recommendation_percentage': 0.4690265486725664}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.6
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 50537.40it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:22<00:00,  2.31s/it]
+{'top_k_accuracy': [0.9019607843137255, 0.9024509803921569, 0.9024509803921569, 0.9024509803921569, 0.9024509803921569], 'n_items': 6120, 'no_recommendation_percentage': 0.6772875816993464}
+At Capability level
+{'top_k_accuracy': [0.9351145038167938, 0.9351145038167938, 0.9351145038167938, 0.9351145038167938, 0.9351145038167938], 'n_items': 4454, 'no_recommendation_percentage': 0.7303547373147732}
+At Product level
+{'top_k_accuracy': [0.9418223533267781, 0.9418223533267781, 0.9418223533267781, 0.9418223533267781, 0.9418223533267781], 'n_items': 6102, 'no_recommendation_percentage': 0.6768272697476237}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.7
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 24858.98it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:23<00:00,  2.31s/it]
+{'top_k_accuracy': [0.9031045751633987, 0.9035947712418301, 0.9035947712418301, 0.9035947712418301, 0.9035947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.6787581699346406}
+At Capability level
+{'top_k_accuracy': [0.9357880556802873, 0.9357880556802873, 0.9357880556802873, 0.9357880556802873, 0.9357880556802873], 'n_items': 4454, 'no_recommendation_percentage': 0.731477323753929}
+At Product level
+{'top_k_accuracy': [0.9421501147164864, 0.9421501147164864, 0.9421501147164864, 0.9421501147164864, 0.9421501147164864], 'n_items': 6102, 'no_recommendation_percentage': 0.678302196001311}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.8
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:23<00:00,  2.31s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.3
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 49913.77it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:24<00:00,  2.33s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.4
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 50148.03it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:24<00:00,  2.32s/it]
+{'top_k_accuracy': [0.7792483660130719, 0.7803921568627451, 0.7803921568627451, 0.7803921568627451, 0.7803921568627451], 'n_items': 6120, 'no_recommendation_percentage': 0.4673202614379085}
+At Capability level
+{'top_k_accuracy': [0.8423888639425235, 0.8423888639425235, 0.8423888639425235, 0.8423888639425235, 0.8423888639425235], 'n_items': 4454, 'no_recommendation_percentage': 0.5475976650202066}
+At Product level
+{'top_k_accuracy': [0.8649623074401835, 0.8649623074401835, 0.8649623074401835, 0.8649623074401835, 0.8649623074401835], 'n_items': 6102, 'no_recommendation_percentage': 0.4668960996394625}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.5
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 49860.97it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:22<00:00,  2.30s/it]
+{'top_k_accuracy': [0.7813725490196078, 0.7821895424836601, 0.7821895424836601, 0.7821895424836601, 0.7821895424836601], 'n_items': 6120, 'no_recommendation_percentage': 0.46977124183006536}
+At Capability level
+{'top_k_accuracy': [0.8428378985181859, 0.8428378985181859, 0.8428378985181859, 0.8428378985181859, 0.8428378985181859], 'n_items': 4454, 'no_recommendation_percentage': 0.5484957341715312}
+At Product level
+{'top_k_accuracy': [0.8662733529990168, 0.8662733529990168, 0.8662733529990168, 0.8662733529990168, 0.8662733529990168], 'n_items': 6102, 'no_recommendation_percentage': 0.4690265486725664}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.6
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 50537.40it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:22<00:00,  2.31s/it]
+{'top_k_accuracy': [0.9019607843137255, 0.9024509803921569, 0.9024509803921569, 0.9024509803921569, 0.9024509803921569], 'n_items': 6120, 'no_recommendation_percentage': 0.6772875816993464}
+At Capability level
+{'top_k_accuracy': [0.9351145038167938, 0.9351145038167938, 0.9351145038167938, 0.9351145038167938, 0.9351145038167938], 'n_items': 4454, 'no_recommendation_percentage': 0.7303547373147732}
+At Product level
+{'top_k_accuracy': [0.9418223533267781, 0.9418223533267781, 0.9418223533267781, 0.9418223533267781, 0.9418223533267781], 'n_items': 6102, 'no_recommendation_percentage': 0.6768272697476237}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.7
+Processing work data for recommendation/VG/tickets.json: 100%|█████████| 8743/8743 [00:00<00:00, 24858.98it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|█| 328/328 [00:13<00:00, 
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|█████████████████████████| 62/62 [02:23<00:00,  2.31s/it]
+{'top_k_accuracy': [0.9031045751633987, 0.9035947712418301, 0.9035947712418301, 0.9035947712418301, 0.9035947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.6787581699346406}
+At Capability level
+{'top_k_accuracy': [0.9357880556802873, 0.9357880556802873, 0.9357880556802873, 0.9357880556802873, 0.9357880556802873], 'n_items': 4454, 'no_recommendation_percentage': 0.731477323753929}
+At Product level
+{'top_k_accuracy': [0.9421501147164864, 0.9421501147164864, 0.9421501147164864, 0.9421501147164864, 0.9421501147164864], 'n_items': 6102, 'no_recommendation_percentage': 0.678302196001311}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.8
+
+
+
+{'top_k_accuracy': [0.542156862745098, 0.5766339869281045, 0.5771241830065359, 0.5777777777777777, 0.5779411764705882], 'n_items': 6120, 'no_recommendation_percentage': 0.15065359477124182}
+At Capability level
+{'top_k_accuracy': [0.666591827570723, 0.6782667265379434, 0.6784912438257746, 0.6784912438257746, 0.6784912438257746], 'n_items': 4454, 'no_recommendation_percentage': 0.27009429726088907}
+At Product level
+{'top_k_accuracy': [0.6892822025565388, 0.7114060963618486, 0.711897738446411, 0.7125532612258276, 0.7125532612258276], 'n_items': 6102, 'no_recommendation_percentage': 0.1501147164863979}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.23
+Processing work data for recommendation/VG/tickets.json: 100%|██████████████████████| 8743/8743 [00:00<00:00, 24930.28it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|████| 328/328 [00:13<00:00, 23.92it/s]
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|██████████████████████████████████████| 62/62 [02:23<00:00,  2.32s/it]
+{'top_k_accuracy': [0.542156862745098, 0.5766339869281045, 0.5771241830065359, 0.5777777777777777, 0.5779411764705882], 'n_items': 6120, 'no_recommendation_percentage': 0.15065359477124182}
+At Capability level
+{'top_k_accuracy': [0.666591827570723, 0.6782667265379434, 0.6784912438257746, 0.6784912438257746, 0.6784912438257746], 'n_items': 4454, 'no_recommendation_percentage': 0.27009429726088907}
+At Product level
+{'top_k_accuracy': [0.6892822025565388, 0.7114060963618486, 0.711897738446411, 0.7125532612258276, 0.7125532612258276], 'n_items': 6102, 'no_recommendation_percentage': 0.1501147164863979}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.25
+Processing work data for recommendation/VG/tickets.json: 100%|██████████████████████| 8743/8743 [00:00<00:00, 50510.40it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|████| 328/328 [00:13<00:00, 23.58it/s]
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|██████████████████████████████████████| 62/62 [02:24<00:00,  2.33s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.27
+Processing work data for recommendation/VG/tickets.json: 100%|██████████████████████| 8743/8743 [00:00<00:00, 49712.60it/s]
+Training recommender
+Generating work embeddings from training with model dunzhang/stella_en_400M_v5: 100%|████| 328/328 [00:14<00:00, 23.28it/s]
+Generating recommendations
+Generating recommendations with chunk_size 100: 100%|██████████████████████████████████████| 62/62 [02:23<00:00,  2.32s/it]
+{'top_k_accuracy': [0.5447712418300653, 0.5784313725490197, 0.5785947712418301, 0.5785947712418301, 0.5785947712418301], 'n_items': 6120, 'no_recommendation_percentage': 0.15408496732026145}
+At Capability level
+{'top_k_accuracy': [0.6672653794342165, 0.680511899416255, 0.680511899416255, 0.680511899416255, 0.680511899416255], 'n_items': 4454, 'no_recommendation_percentage': 0.27436012572968116}
+At Product level
+{'top_k_accuracy': [0.6917404129793511, 0.71304490331039, 0.71304490331039, 0.71304490331039, 0.71304490331039], 'n_items': 6102, 'no_recommendation_percentage': 0.15339233038348082}
+^Done for top_k_search_value 5, top_k_rerank value 5, threshold 0.29
